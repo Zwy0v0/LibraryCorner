@@ -38,7 +38,7 @@ const COLUMNS = [
     dataIndex: 'backAt',
     key: 'backAt',
     width: 160,
-    render: (text) => dayjs(text).format('YYYY-MM-DD')
+    render: (text) => text ? dayjs(text).format('YYYY-MM-DD') : '-'
   },
   {
     title: 'createDAt',
